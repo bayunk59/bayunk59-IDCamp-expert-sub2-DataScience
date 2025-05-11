@@ -86,9 +86,11 @@ Saat dilakukan uji korelasi adidapatkan nilai sebagai berikut
 | Debtor                                    | -0.240999 |
 | Age_at_enrollment                         | -0.243438 |
 
+Dikarenakan nilai pada fitur `status_label` maka bisa disimpulkan nilai dengan korelasi positif cenderung berbanding lurus dengan status `Graduate` yang bernilai 2 dan korelasi negatif cenderung berbanding lurus dengan status `Dropout` yang bernilai 0.
 
-Berdasarkan data tersebut terdapat 1 variabel yaitu `DistanceFromHome` yang menunjukkan nilai korelasi positif sebesar +0.08, yang mengindikasikan bahwa semakin jauh rumah karyawan ke tempat kerja, semakin besar kemungkinan karyawan yang melakukan `Attrition`
+Dari nilai korelasi tersebut ada 4 fitur yang paling berpengaruh terhadap status `Dropout` nya mahasiswa mulai dari `Application_mode`, `Gender`, `Debtor` dan juga `Age_at_Enrollment`. 4 fitur ini dapat dipertimbangkan untuk mencegah terjadinya *dropout* dikemudian hari.
 
-Berdasrkan hasil korelasi itu juga dapat disimpulkan bahwa faktor-faktor yang berhubungan dengan kepuasan kerja, pengalaman kerja, serta kompensasi memiliki kontribusi penting dalam memengaruhi tingkat `attrition` di perusahaan. Oleh karena itu, perusahaan dapat mempertimbangkan peningkatan kepuasan kerja, penyesuaian kompensasi, dan program loyalitas karyawan sebagai strategi untuk menurunkan tingkat `attrition`.
-
-### Rekomendasi Action Items (Optional)
+### Rekomendasi Action Items
+Berdasarkan pada pengerjaan yang sudah saya lakukan, rekomendasi action yang bisa dilakukan oleh Jaya Jaya institut adalah:
+1. Membantu pinjaman kepada mahasiswa untuk biaya kuliah atau menambah kuota beasiswa untuk mahasiswa yang membutuhkan
+2. Monitoring lebih awal terhadap mahasiswa terutama yang memiliki 4 kriteria di atas 
