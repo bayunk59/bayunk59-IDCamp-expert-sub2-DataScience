@@ -90,6 +90,9 @@ Dikarenakan nilai pada fitur `status_label` maka bisa disimpulkan nilai dengan k
 
 Dari nilai korelasi tersebut ada 4 fitur yang paling berpengaruh terhadap status `Dropout` nya mahasiswa mulai dari `Application_mode`, `Gender`, `Debtor` dan juga `Age_at_Enrollment`. 4 fitur ini dapat dipertimbangkan untuk mencegah terjadinya *dropout* dikemudian hari.
 
+Saya juga menampilkan beberapa data saya dalam streamlit sederhana untuk melihat gambaran mahasiswa dari Institut Jaya jaya.
+
+
 ### Rekomendasi Action Items
 Berdasarkan pada pengerjaan yang sudah saya lakukan, rekomendasi action yang bisa dilakukan oleh Jaya Jaya institut adalah:
 1. Membantu pinjaman kepada mahasiswa untuk biaya kuliah atau menambah kuota beasiswa untuk mahasiswa yang membutuhkan
