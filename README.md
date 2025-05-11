@@ -35,34 +35,57 @@ Setup environment:
 
 ## Business Dashboard
 
-
-Dashboard tersebut menampilkan jumlah pegawai yang melakukan `Attrition` dan juga menampilkan beberapa faktor yang mempengaruhi tingkat `Attrition` pada perusahaan tersebut.
+![Bayun Kurniawan - Dashboard](https://github.com/user-attachments/assets/33ea3b22-ac09-41f2-a5a2-1f1e9b2a4bb8)
+Dashboard tersebut menampilkan beberapa fitur yang ada dalam data tersebut mulai dari jumlah keseluruhan mahasiswa, jumlah pemegang beasiswa, sampai asal mulai mahasiswa tersebut.
 
 ## Conclusion
-![Bayun Kurniawan - Dashboard](https://github.com/user-attachments/assets/33ea3b22-ac09-41f2-a5a2-1f1e9b2a4bb8)
+
 Data pada proyek ini memiliki jumlah 4424 data tanpa ada data yang mmemiliki 'missing value".
 Datanya berisi 37 fitur dengan rincian:
-- 1 data dengan tipe data objek dengan fitur 'Status'
+- 1 data dengan tipe data objek dengan fitur `Status`
 - 36 data lainnya dengan tipe data numerik
 
-Selanjutnya saya membuat grafik untuk melihat jumlah mahasiswa berdasarkan 'Status' nya, didpatkan data sebagai berikut:
-1. 
-Selanjutnya data saya bagi menjadi 2 berdasarkan type nya, yakni numerik dan kategorik dengan rincian 27 data numerik dan 8 data kategorik. Pada data numerik ini saya lakukan uji korelasi untuk meliihat hubungannya dengan `Attrition`.
+Selanjutnya saya membuat grafik untuk melihat jumlah mahasiswa berdasarkan `Status` nya, didpatkan data sebagai berikut:
 
-Saat dilakukan uji korelasi ada beberapa faktor yang mempengaruhi nilai `Attrition` pada perusahaan tersebut, yaitu:
+| Status    | Jumlah | Persentase (%) |
+|-----------|--------|----------------|
+| Graduate  | 2209   | 49.93%         |
+| Dropout   | 1421   | 32.12%         |
+| Enrolled  | 794    | 17.95%         |
+| **Total** | **4424** | **100.00%**  |
 
-1. `Age` -0.17
-2. `EnvironmentSatisfaction` -0.13
-3. `JobInvolvement` -0.15
-4. `JobLevel` -0.17
-5. `JobSatisfaction` -0.09
-6. `MonthlyIncome` -0.16
-7. `StockOptionLevel` -0.16
-8. `TotalWorkingYears` -0.18
-9. `YearsAtCompany` -0.14
-10. `YearsInCurrentRole` -0.16
-11. `YearsWithCurrManager` -0.16
-12. `DistanceFromHome` +0.08
+Berdasakan data di atas dapat dilihat, jumlah mahasiswa yang berstatus *dropout* ada 32,12% dengan jumlah 1421 dari jumalh 4424 siswa. 
+
+Selanjutnya saya membuat fitur baru bernama `status_label` yang berasal dari fitur 'Status` dengan mengubah tipenya menjadi numerik. Status `Dropout` saya ubah menjadi angka 0, `Enrolled` saya ubah menjadi angka 1 dan `Graduate` saya ubah menjadi 2. Setelah itu saya tentukan nilai korelasi dari semua fitur yang ada terhadap fitur `status_label` yang baru saya buat. 
+Saat dilakukan uji korelasi adidapatkan nilai sebagai berikut
+
+| Fitur                                     | Korelasi  |
+|-------------------------------------------|-----------|
+| Curricular_units_2nd_sem_approved         | 0.624157  |
+| Curricular_units_2nd_sem_grade            | 0.566827  |
+| Curricular_units_1st_sem_approved         | 0.529123  |
+| Curricular_units_1st_sem_grade            | 0.485207  |
+| Tuition_fees_up_to_date                   | 0.409827  |
+| Scholarship_holder                        | 0.297595  |
+| Curricular_units_2nd_sem_enrolled         | 0.175847  |
+| Curricular_units_1st_sem_enrolled         | 0.155974  |
+| Admission_grade                           | 0.120889  |
+| Displaced                                 | 0.113986  |
+| Previous_qualification_grade              | 0.103764  |
+| Curricular_units_2nd_sem_evaluations      | 0.092721  |
+| Application_order                         | 0.089791  |
+| Daytime_evening_attendance                | 0.075107  |
+| Curricular_units_2nd_sem_credited         | 0.054004  |
+| Curricular_units_1st_sem_credited         | 0.048150  |
+| Curricular_units_1st_sem_evaluations      | 0.044362  |
+| GDP                                       | 0.044135  |
+| Course                                    | 0.034219  |
+
+| Application_mode                          | -0.221747 |
+| Gender                                    | -0.229270 |
+| Debtor                                    | -0.240999 |
+| Age_at_enrollment                         | -0.243438 |
+
 
 Berdasarkan data tersebut terdapat 1 variabel yaitu `DistanceFromHome` yang menunjukkan nilai korelasi positif sebesar +0.08, yang mengindikasikan bahwa semakin jauh rumah karyawan ke tempat kerja, semakin besar kemungkinan karyawan yang melakukan `Attrition`
 
