@@ -17,7 +17,7 @@ Berikut beberapa cakupan proyek ini:
 
 ### Persiapan
 
-Sumber data: "https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/employee/employee_data.csv"
+Sumber data: "[https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/students_performance/data.csv]"
 
 Setup environment:
 
@@ -35,13 +35,18 @@ Setup environment:
 
 ## Business Dashboard
 
-![Dashboard](image.png)
+
 Dashboard tersebut menampilkan jumlah pegawai yang melakukan `Attrition` dan juga menampilkan beberapa faktor yang mempengaruhi tingkat `Attrition` pada perusahaan tersebut.
 
 ## Conclusion
+![Bayun Kurniawan - Dashboard](https://github.com/user-attachments/assets/33ea3b22-ac09-41f2-a5a2-1f1e9b2a4bb8)
+Data pada proyek ini memiliki jumlah 4424 data tanpa ada data yang mmemiliki 'missing value".
+Datanya berisi 37 fitur dengan rincian:
+- 1 data dengan tipe data objek dengan fitur 'Status'
+- 36 data lainnya dengan tipe data numerik
 
-Pada proyek ini ditemukan 412 data yang `missing value` pada kolom `Attrition`, langkah yang saya ambil selanjutnya adalah menghapus 412 data tersebut karena jumlah data yang tersisa masih cukup banyak dengan jumlah 1058 data.
-
+Selanjutnya saya membuat grafik untuk melihat jumlah mahasiswa berdasarkan 'Status' nya, didpatkan data sebagai berikut:
+1. 
 Selanjutnya data saya bagi menjadi 2 berdasarkan type nya, yakni numerik dan kategorik dengan rincian 27 data numerik dan 8 data kategorik. Pada data numerik ini saya lakukan uji korelasi untuk meliihat hubungannya dengan `Attrition`.
 
 Saat dilakukan uji korelasi ada beberapa faktor yang mempengaruhi nilai `Attrition` pada perusahaan tersebut, yaitu:
