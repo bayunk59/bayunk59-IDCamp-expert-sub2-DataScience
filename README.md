@@ -7,13 +7,13 @@ Intitusi ini membutuhkan bantuan untuk mengidentifikasi apa penyebab mahasiswany
 
 ### Permasalahan Bisnis
 
-Perusahaan Jaya Jaya Maju mengalami masalah dalam pengelolaan sumber daya manusia yang ditandai dengan tinginya tingkat Attrition rate mencapai >10%. Kondisi ini berdampak negatif terhadap stabilitas operasional perusahaan, biaya rekrutmen, pelatihan karyawan baru dan produktivitas kerja perusahaan.
+Institut Jaya Jaya mengalami masalahbesar karena jumlah mahasiswa yang tidak dapat menyelesaikan studinya lumayan tinggi. Kondisi ini dapat berdampak pada reputasi baik institusi ini.
 
 ### Cakupan Proyek
 
 Berikut beberapa cakupan proyek ini:
 
-1. Apa saja faktor yang mempengaruhi Attrion rate pada perusahaan Jaya Jaya Maju.
+1. Apa saja faktor yang mempengaruhi tingkat *dropout* pada institus jaya Jaya.
 
 ### Persiapan
 
