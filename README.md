@@ -45,7 +45,7 @@ Datanya berisi 37 fitur dengan rincian:
 - 1 data dengan tipe data objek dengan fitur `Status`
 - 36 data lainnya dengan tipe data numerik
 
-Selanjutnya saya membuat grafik untuk melihat jumlah mahasiswa berdasarkan `Status` nya, didpatkan data sebagai berikut:
+Selanjutnya dibuat grafik untuk melihat jumlah mahasiswa berdasarkan `Status` nya, didapatkan data sebagai berikut:
 
 | Status    | Jumlah | Persentase (%) |
 |-----------|--------|----------------|
@@ -56,7 +56,7 @@ Selanjutnya saya membuat grafik untuk melihat jumlah mahasiswa berdasarkan `Stat
 
 Berdasakan data di atas dapat dilihat, jumlah mahasiswa yang berstatus *dropout* ada 32,12% dengan jumlah 1421 dari jumalh 4424 siswa. 
 
-Selanjutnya saya membuat fitur baru bernama `status_label` yang berasal dari fitur 'Status` dengan mengubah tipenya menjadi numerik. Status `Dropout` saya ubah menjadi angka 0, `Enrolled` saya ubah menjadi angka 1 dan `Graduate` saya ubah menjadi 2. Setelah itu saya tentukan nilai korelasi dari semua fitur yang ada terhadap fitur `status_label` yang baru saya buat. 
+Selanjutnya dibuat sebuah fitur baru bernama `status_label` yang berasal dari fitur 'Status` dengan mengubah tipenya menjadi numerik. Status `Dropout` diubah menjadi angka 0, `Enrolled` diubah menjadi angka 1 dan `Graduate` diubah menjadi 2. Setelah itu fitur baru tersebut digunakan untuk membantu menentukan nilai korelasi dari setiap fitur terhadap fitur status.
 Saat dilakukan uji korelasi adidapatkan nilai sebagai berikut
 
 | Fitur                                     | Korelasi  |
@@ -81,6 +81,8 @@ Saat dilakukan uji korelasi adidapatkan nilai sebagai berikut
 | GDP                                       | 0.044135  |
 | Course                                    | 0.034219  |
 
+| Fitur                                     | Korelasi  |
+|-------------------------------------------|-----------|
 | Application_mode                          | -0.221747 |
 | Gender                                    | -0.229270 |
 | Debtor                                    | -0.240999 |
@@ -90,10 +92,10 @@ Dikarenakan nilai pada fitur `status_label` maka bisa disimpulkan nilai dengan k
 
 Dari nilai korelasi tersebut ada 4 fitur yang paling berpengaruh terhadap status `Dropout` nya mahasiswa mulai dari `Application_mode`, `Gender`, `Debtor` dan juga `Age_at_Enrollment`. 4 fitur ini dapat dipertimbangkan untuk mencegah terjadinya *dropout* dikemudian hari.
 
-Saya juga menampilkan beberapa data saya dalam streamlit sederhana untuk melihat gambaran mahasiswa dari Institut Jaya jaya di [streamlit](https://jaya-institut.streamlit.app/)
-
-
+Berikut tampilan streamlit sederhana untuk membantu identifikasi awal mahasiswa dari Institut Jaya jaya 
+[streamlit](https://jaya-institut.streamlit.app/)
+ 
 ### Rekomendasi Action Items
-Berdasarkan pada pengerjaan yang sudah saya lakukan, rekomendasi action yang bisa dilakukan oleh Jaya Jaya institut adalah:
+Berdasarkan pada pengerjaan yang sudah dilakukan, rekomendasi action yang bisa dilakukan oleh Jaya Jaya institut adalah:
 1. Membantu pinjaman kepada mahasiswa untuk biaya kuliah atau menambah kuota beasiswa untuk mahasiswa yang membutuhkan
 2. Monitoring lebih awal terhadap mahasiswa terutama yang memiliki 4 kriteria di atas 
